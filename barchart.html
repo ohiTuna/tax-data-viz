@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>barchart</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.3.min.js" integrity="sha384-T2yuo9Oe71Cz/I4X9Ac5+gpEa5a8PpJCDlqKYO0CfAuEszu1JrXLl8YugMqYe3sM" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="b8a72e81-2034-4710-8154-6a63ff50cd66" data-root-id="3034"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3286">
+          {"7ff1112b-88e8-428f-b606-6d4d4a5a1299":{"roots":{"references":[{"attributes":{},"id":"3041","type":"LinearScale"},{"attributes":{"data_source":{"id":"3033"},"glyph":{"id":"3091"},"hover_glyph":null,"muted_glyph":null,"name":"50k to 200k","nonselection_glyph":{"id":"3092"},"selection_glyph":null,"view":{"id":"3094"}},"id":"3093","type":"GlyphRenderer"},{"attributes":{"start":0},"id":"3039","type":"DataRange1d"},{"attributes":{"data":{"0 to 50k":[16759871000,16486051000,17327443000,16879598000,18675042000,19008285000,19783354000,22073815000,21950521000,22313681000,22208267000,21157244000,22734322000,20821212000],"1mil and up":[235036000000,259936000000,271512000000,264015000000,225470000000,244514000000,249962000000,323393000000,301348000000,341202000000,372969000000,366432000000,424516000000,431508000000],"200k to 1mil":[162806000000,173149000000,180499000000,182939000000,175180000000,180000000000,192426000000,214089000000,229364000000,241642000000,262102000000,267504000000,282312000000,295832000000],"50k to 200k":[77419084000,78652836000,78062138000,78620139000,78448117000,82016617000,85775266000,88691925000,95300250000,95955315000,98343692000,99217997000,103868000000,104201000000],"All returns, total":[492021000000,528225000000,547401000000,542454000000,497773000000,525538000000,547947000000,648248000000,647963000000,701113000000,755623000000,754312000000,833430000000,852363000000],"Year":[2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018],"index":[0,1,2,3,4,5,6,7,8,9,10,11,12,13]},"selected":{"id":"3085"},"selection_policy":{"id":"3086"}},"id":"3033","type":"ColumnDataSource"},{"attributes":{"fields":["0 to 50k"]},"id":"3068","type":"Stack"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"3053"},{"id":"3054"},{"id":"3055"},{"id":"3056"},{"id":"3057"},{"id":"3058"}]},"id":"3060","type":"Toolbar"},{"attributes":{},"id":"3043","type":"LinearScale"},{"attributes":{"data_source":{"id":"3033"},"glyph":{"id":"3076"},"hover_glyph":null,"muted_glyph":null,"name":"0 to 50k","nonselection_glyph":{"id":"3077"},"selection_glyph":null,"view":{"id":"3079"}},"id":"3078","type":"GlyphRenderer"},{"attributes":{"bottom":{"expr":{"id":"3067"}},"fill_color":{"value":"#1b9e77"},"line_color":{"value":"#1b9e77"},"top":{"expr":{"id":"3068"}},"width":{"value":0.9},"x":{"field":"Year"}},"id":"3076","type":"VBar"},{"attributes":{"fields":["0 to 50k","50k to 200k","200k to 1mil","1mil and up"]},"id":"3074","type":"Stack"},{"attributes":{},"id":"3046","type":"BasicTicker"},{"attributes":{"fields":["0 to 50k","50k to 200k","200k to 1mil"]},"id":"3073","type":"Stack"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"3059","type":"BoxAnnotation"},{"attributes":{"bottom":{"expr":{"id":"3069"}},"fill_color":{"value":"#d95f02"},"line_color":{"value":"#d95f02"},"top":{"expr":{"id":"3070"}},"width":{"value":0.9},"x":{"field":"Year"}},"id":"3091","type":"VBar"},{"attributes":{},"id":"3050","type":"BasicTicker"},{"attributes":{"axis":{"id":"3049"},"dimension":1,"ticker":null},"id":"3052","type":"Grid"},{"attributes":{"fields":["0 to 50k"]},"id":"3069","type":"Stack"},{"attributes":{"callback":null},"id":"3058","type":"TapTool"},{"attributes":{"label":{"value":"50k to 200k"},"renderers":[{"id":"3093"}]},"id":"3103","type":"LegendItem"},{"attributes":{"source":{"id":"3033"}},"id":"3094","type":"CDSView"},{"attributes":{},"id":"3057","type":"WheelZoomTool"},{"attributes":{},"id":"3037","type":"DataRange1d"},{"attributes":{},"id":"3054","type":"PanTool"},{"attributes":{"axis_label":"Year","formatter":{"id":"3082"},"ticker":{"id":"3046"}},"id":"3045","type":"LinearAxis"},{"attributes":{"source":{"id":"3033"}},"id":"3122","type":"CDSView"},{"attributes":{"text":"PartnershipAndScorpNetIncomeTotal"},"id":"3035","type":"Title"},{"attributes":{"axis":{"id":"3045"},"ticker":null},"id":"3048","type":"Grid"},{"attributes":{"bottom":{"expr":{"id":"3073"}},"fill_color":{"value":"#e7298a"},"line_color":{"value":"#e7298a"},"top":{"expr":{"id":"3074"}},"width":{"value":0.9},"x":{"field":"Year"}},"id":"3119","type":"VBar"},{"attributes":{"fields":["0 to 50k","50k to 200k"]},"id":"3071","type":"Stack"},{"attributes":{"bottom":{"expr":{"id":"3071"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#7570b3"},"line_alpha":{"value":0.1},"line_color":{"value":"#7570b3"},"top":{"expr":{"id":"3072"}},"width":{"value":0.9},"x":{"field":"Year"}},"id":"3106","type":"VBar"},{"attributes":{"fields":["0 to 50k","50k to 200k"]},"id":"3070","type":"Stack"},{"attributes":{"bottom":{"expr":{"id":"3067"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#1b9e77"},"line_alpha":{"value":0.1},"line_color":{"value":"#1b9e77"},"top":{"expr":{"id":"3068"}},"width":{"value":0.9},"x":{"field":"Year"}},"id":"3077","type":"VBar"},{"attributes":{"label":{"value":"1mil and up"},"renderers":[{"id":"3121"}]},"id":"3131","type":"LegendItem"},{"attributes":{"source":{"id":"3033"}},"id":"3079","type":"CDSView"},{"attributes":{"fields":[]},"id":"3067","type":"Stack"},{"attributes":{"data_source":{"id":"3033"},"glyph":{"id":"3105"},"hover_glyph":null,"muted_glyph":null,"name":"200k to 1mil","nonselection_glyph":{"id":"3106"},"selection_glyph":null,"view":{"id":"3108"}},"id":"3107","type":"GlyphRenderer"},{"attributes":{"fields":["0 to 50k","50k to 200k","200k to 1mil"]},"id":"3072","type":"Stack"},{"attributes":{"below":[{"id":"3045"}],"center":[{"id":"3048"},{"id":"3052"},{"id":"3088"}],"left":[{"id":"3049"}],"plot_width":800,"renderers":[{"id":"3078"},{"id":"3093"},{"id":"3107"},{"id":"3121"}],"title":{"id":"3035"},"toolbar":{"id":"3060"},"toolbar_location":"above","x_range":{"id":"3037"},"x_scale":{"id":"3041"},"y_range":{"id":"3039"},"y_scale":{"id":"3043"}},"id":"3034","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"3085","type":"Selection"},{"attributes":{"axis_label":"USD","formatter":{"id":"3084"},"ticker":{"id":"3050"}},"id":"3049","type":"LinearAxis"},{"attributes":{},"id":"3082","type":"BasicTickFormatter"},{"attributes":{},"id":"3056","type":"ResetTool"},{"attributes":{"bottom":{"expr":{"id":"3071"}},"fill_color":{"value":"#7570b3"},"line_color":{"value":"#7570b3"},"top":{"expr":{"id":"3072"}},"width":{"value":0.9},"x":{"field":"Year"}},"id":"3105","type":"VBar"},{"attributes":{"bottom":{"expr":{"id":"3069"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#d95f02"},"line_alpha":{"value":0.1},"line_color":{"value":"#d95f02"},"top":{"expr":{"id":"3070"}},"width":{"value":0.9},"x":{"field":"Year"}},"id":"3092","type":"VBar"},{"attributes":{},"id":"3053","type":"SaveTool"},{"attributes":{"source":{"id":"3033"}},"id":"3108","type":"CDSView"},{"attributes":{"data_source":{"id":"3033"},"glyph":{"id":"3119"},"hover_glyph":null,"muted_glyph":null,"name":"1mil and up","nonselection_glyph":{"id":"3120"},"selection_glyph":null,"view":{"id":"3122"}},"id":"3121","type":"GlyphRenderer"},{"attributes":{"label":{"value":"0 to 50k"},"renderers":[{"id":"3078"}]},"id":"3089","type":"LegendItem"},{"attributes":{"bottom":{"expr":{"id":"3073"}},"fill_alpha":{"value":0.1},"fill_color":{"value":"#e7298a"},"line_alpha":{"value":0.1},"line_color":{"value":"#e7298a"},"top":{"expr":{"id":"3074"}},"width":{"value":0.9},"x":{"field":"Year"}},"id":"3120","type":"VBar"},{"attributes":{"items":[{"id":"3089"},{"id":"3103"},{"id":"3117"},{"id":"3131"}]},"id":"3088","type":"Legend"},{"attributes":{"label":{"value":"200k to 1mil"},"renderers":[{"id":"3107"}]},"id":"3117","type":"LegendItem"},{"attributes":{},"id":"3086","type":"UnionRenderers"},{"attributes":{"use_scientific":false},"id":"3084","type":"BasicTickFormatter"},{"attributes":{"overlay":{"id":"3059"}},"id":"3055","type":"BoxZoomTool"}],"root_ids":["3034"]},"title":"Bokeh Application","version":"2.2.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('3286').textContent;
+                  var render_items = [{"docid":"7ff1112b-88e8-428f-b606-6d4d4a5a1299","root_ids":["3034"],"roots":{"3034":"b8a72e81-2034-4710-8154-6a63ff50cd66"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
