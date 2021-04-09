@@ -12,6 +12,7 @@ from bokeh.io import show
 from bokeh.models import CustomJS, Dropdown
 import os
 
+
 data = pd.read_csv('taxthing4.csv', parse_dates=['Date'])
 data.head()
 data.Date.min(), data.Date.max()
@@ -29,6 +30,7 @@ cats = ['0 to 50k','50k to 200k','200k to 1mil','1mil and up']
 print(temp_df)
 temp_df.head()
 TOOLS = "save,pan,box_zoom,reset,wheel_zoom,tap"
+
 
 source = ColumnDataSource(data=temp_df)
 p = figure( plot_width=800, title="AnnutitesTaxableTotal",toolbar_location='above', tools=TOOLS)
